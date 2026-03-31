@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lumière Salon | Book an Appointment</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+
+<body class="hurr">
+
+  <!-- header -->
+  <header class="hurr-top">
+    <div class="container hurr-top__inner">
+      <div class="hurr-mark">
+        <div class="hurr-mark__logo">L<span>•</span>S</div>
+      </div>
+
+      <nav class="hurr-nav">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#team">our team</a>
+        <a href="#services">our services</a>
+        <a href="#reviews">reviews</a>
+        <a href="#book" class="hurr-nav__cta">book</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- home -->
+  <section class="hurr-hero" id="home" aria-label="Hero">
+    <div class="hurr-hero__media">
+      <img src="images/hero.jpg" alt="Hero"/>
+    </div>
+  </section>
+
+  <!-- purple infinity marquee -->
+  <div class="hurr-marquee" aria-hidden="true">
+    <div class="hurr-marquee__track">
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+      <span>IT'S THE LUMIÈRE EXPERIENCE</span>
+    </div>
+  </div>
+
+  <!-- pink values band -->
+  <section class="hurr-band hurr-band--blush" aria-label="Values">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="hurr-icon">
+            <div class="hurr-icon__circle"><i class="bi bi-shield-check"></i></div>
+            <div class="hurr-icon__title">Transparent Pricing</div>
+            <div class="hurr-icon__sub">No surprises. Ever.</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="hurr-icon">
+            <div class="hurr-icon__circle"><i class="bi bi-heart"></i></div>
+            <div class="hurr-icon__title">Hair-Health First</div>
+            <div class="hurr-icon__sub">Protocols that protect.</div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="hurr-icon">
+            <div class="hurr-icon__circle"><i class="bi bi-stars"></i></div>
+            <div class="hurr-icon__title">Luxury Finish</div>
+            <div class="hurr-icon__sub">Polished + wearable.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section class="hurr-split" id="about" aria-label="About">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="hurr-frame">
+            <img src="images/story-1.png" alt="Product / Salon"/>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="hurr-kicker">Rewriting the salon experience</div>
+          <h2 class="hurr-h2">Precision, comfort, and results that feel expensive.</h2>
+          <p class="hurr-p">
+            We start with a real consultation, map your maintenance level, and build a plan that looks
+            incredible now <em>and</em> grows out beautifully.
+          </p>
+
+          <div class="hurr-actions">
+            <a class="btn btn-dark hurr-btn" href="#book">Book an appointment</a>
+            <a class="btn btn-outline-dark hurr-btn" href="#reviews">Read reviews</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hurr-ribbon" aria-hidden="true">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,64 C150,104 350,24 600,64 C850,104 1050,24 1200,64 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- signature experience -->
+  <section class="hurr-band hurr-band--cream" aria-label="Signature Experience">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap">
+        <h2 class="hurr-h2 mb-2">Signature Experience</h2>
+        <div class="hurr-kicker mb-2">Luxury is in the details.</div>
+      </div>
+
+      <p class="hurr-p mb-4" style="max-width:75ch;">
+        Our appointments are built around precision, comfort, and a result that looks effortless — from consultation to finish.
+      </p>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+            <div class="card-body">
+              <div class="hurr-kicker mb-2"><i class="bi bi-chat-square-text mr-2"></i>Consultation Ritual</div>
+              <div class="hurr-p mb-0">We align on your goals, lifestyle, and maintenance level before anything begins.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+            <div class="card-body">
+              <div class="hurr-kicker mb-2"><i class="bi bi-scissors mr-2"></i>Precision Cut Method</div>
+              <div class="hurr-p mb-0">Shape-first cutting designed to grow out beautifully and stay polished longer.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+            <div class="card-body">
+              <div class="hurr-kicker mb-2"><i class="bi bi-droplet mr-2"></i>Color Protocol</div>
+              <div class="hurr-p mb-0">Dimensional planning with healthy hair as the priority — always.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+            <div class="card-body">
+              <div class="hurr-kicker mb-2"><i class="bi bi-stars mr-2"></i>Finish & Style</div>
+              <div class="hurr-p mb-0">A clean finish + at-home tips so it looks salon-fresh every day.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- our team -->
+  <section class="hurr-split hurr-split--lav" id="team" aria-label="Our team">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="hurr-copybox">
+            <div class="hurr-kicker">The Lumière method</div>
+            <h2 class="hurr-h2">Natural, second-nature beauty.</h2>
+            <p class="hurr-p">
+              Our stylists build dimension with restraint: clean sections, precise placement, and a finish
+              that looks effortless in real life.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="hurr-frame">
+            <img src="images/story-2.png" alt="Client"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="d-flex align-items-center justify-content-between flex-wrap">
+          <h2 class="ns-h2 mb-2">Meet the experts</h2>
+          <div class="text-muted">Tap a stylist for quick details.</div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-4 mb-3">
+            <div class="card ns-card h-100">
+              <img class="card-img-top" src="images/stylist-ava.jpg" alt="Portrait of Ava"/>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Ava Chen</h5>
+                <div class="text-muted mb-2">Senior Stylist • Short/Medium cuts</div>
+                <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#avaBio">
+                  <i class="bi bi-info-circle mr-1"></i> About
+                </button>
+                <div id="avaBio" class="collapse mt-3 text-muted">
+                  Clean fades, textured layers, and styles that grow out nicely.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card ns-card h-100">
+              <img class="card-img-top" src="images/stylist-marco.jpg" alt="Portrait of Marco"/>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Marco Silva</h5>
+                <div class="text-muted mb-2">Color Specialist • Balayage/Gloss</div>
+                <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#marcoBio">
+                  <i class="bi bi-info-circle mr-1"></i> About
+                </button>
+                <div id="marcoBio" class="collapse mt-3 text-muted">
+                  Natural blends, healthy shine, and low-maintenance color plans.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card ns-card h-100">
+              <img class="card-img-top" src="images/stylist-sam.jpg" alt="Portrait of Sam"/>
+              <div class="card-body">
+                <h5 class="card-title mb-1">Sam Patel</h5>
+                <div class="text-muted mb-2">Stylist • Long hair & styling</div>
+                <button class="btn btn-sm btn-outline-secondary" type="button" data-toggle="collapse" data-target="#samBio">
+                  <i class="bi bi-info-circle mr-1"></i> About
+                </button>
+                <div id="samBio" class="collapse mt-3 text-muted">
+                  Long layers, blowouts, and event-ready styling that lasts.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- our services -->
+  <section class="hurr-book" id="services" aria-label="Our services">
+    <main class="container my-5">
+      <div class="d-flex align-items-center justify-content-between flex-wrap">
+        <h2 class="ns-h2 mb-2">Style Gallery</h2>
+        <div class="text-muted">Hover to Explore!</div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="gallery-item">
+            <img src="images/gallery-short.jpg" alt="Modern Short Textured Haircut"/>
+            <div class="gallery-overlay">
+              <h6>Modern Short Cut</h6>
+              <small>Clean Fade with Sift Texture.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="gallery-item">
+            <img src="images/gallery-clipper.jpg" alt="Short Clipper Haircut"/>
+            <div class="gallery-overlay">
+              <h6>Clipper Short Cut</h6>
+              <small>Clean Fade.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="gallery-item">
+            <img src="images/gallery-medium-layers.jpg" alt="Layered Medium Haircut"/>
+            <div class="gallery-overlay">
+              <h6>Layered Medium Cut</h6>
+              <small>Volume and Movement.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="gallery-item">
+            <img src="images/gallery-medium.jpg" alt="Blunt Medium with Soft Curl Haircut"/>
+            <div class="gallery-overlay">
+              <h6>Blunt Medium with Soft Culrs</h6>
+              <small>Length and Sleekness.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="gallery-item">
+            <img src="images/gallery-medium-butterfly.jpg" alt="Medium Length Haircut with Curtain Bangs"/>
+            <div class="gallery-overlay">
+              <h6>Medium Cut with Curtain Bangs</h6>
+              <small>Butterfly Cut and Face-Framing.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="gallery-item">
+            <img src="images/gallery-long-cascade.jpg" alt="Long Styled Haircut"/>
+            <div class="gallery-overlay">
+              <h6>Long Haircut</h6>
+              <small>Flowing Cascade.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="gallery-item">
+            <img src="images/gallery-long-layers.jpg" alt="Long Haircut with Many Layers"/>
+            <div class="gallery-overlay">
+              <h6>Long Haircut</h6>
+              <small>Length, Layers, and Movement</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 mb-4">
+          <div class="gallery-item">
+            <img src="images/gallery-balayage.jpg" alt="Long Haircut with Balayage"/>
+            <div class="gallery-overlay">
+              <h6>Color Refresh</h6>
+              <small>Soft Waves with Balayage</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <!-- reviews -->
+  <section class="hurr-band hurr-band--blush" id="reviews" aria-label="Reviews">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between flex-wrap">
+        <h2 class="hurr-h2 mb-2">Client Words</h2>
+        <div class="hurr-kicker mb-2">Real results, real people.</div>
+      </div>
+
+      <div id="testimonialsCarousel" class="carousel slide mt-3" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#testimonialsCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonialsCarousel" data-slide-to="1"></li>
+          <li data-target="#testimonialsCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“Best cut I’ve had in years — the shape still looks perfect weeks later.”</p>
+                    <div class="hurr-kicker">— Nadia</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“They actually listened. The color is dimensional, natural, and so classy.”</p>
+                    <div class="hurr-kicker">— Amélie</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“The consultation was so detailed — I felt confident before we even started.”</p>
+                    <div class="hurr-kicker">— Sara</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“My blowout lasted days. It looked expensive and effortless.”</p>
+                    <div class="hurr-kicker">— Lina</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“Super professional — clear pricing, clean work, and the vibe is calm.”</p>
+                    <div class="hurr-kicker">— Mariam</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“The stylist gave me a plan for maintenance so my hair stays healthy.”</p>
+                    <div class="hurr-kicker">— Chloe</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“I walked out feeling like a new person. The finish was unreal.”</p>
+                    <div class="hurr-kicker">— Yasmine</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“They nailed the reference photo without making it look harsh or fake.”</p>
+                    <div class="hurr-kicker">— Emma</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div class="card h-100" style="border-radius:0;border:1px solid var(--line);">
+                  <div class="card-body">
+                    <div style="letter-spacing:1px;">★★★★★</div>
+                    <p class="hurr-p mb-3">“Easy booking, great communication, and the results are consistently top-tier.”</p>
+                    <div class="hurr-kicker">— Sophia</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#testimonialsCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#testimonialsCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- book -->
+  <section id="book" class="hurr-book" aria-label="Book">
+    <main class="container my-5">
+
+      <section class="ns-flow" data-reveal>
+        <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+          <h2 class="ns-h2 mb-2">Book an appointment</h2>
+          <div class="text-muted">
+            <i class="bi bi-lightning-charge-fill mr-1"></i> Next buttons appear only when you’re ready.
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+          <small class="text-muted" id="progressLabel">Step 1 of 3</small>
+          <small class="text-muted" id="progressPercent">0%</small>
+        </div>
+
+        <div class="progress mb-3" style="height:18px;">
+          <div id="bookingProgressBar" class="progress-bar" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        </div>
+
+        <div id="accordion" class="ns-accordion">
+
+          <div class="card">
+            <div class="card-header" id="headingService">
+              <button class="btn btn-link ns-accordion-link" data-toggle="collapse" data-target="#collapseService" aria-expanded="true">
+                <span class="ns-step">1</span> Select a service <span class="text-muted ml-2">(pricing shown)</span>
+              </button>
+            </div>
+
+            <div id="collapseService" class="collapse show" data-parent="#accordion">
+              <div class="card-body">
+                <p class="text-muted mb-3">Mapping help: photos show what “short / medium / long / color” means.</p>
+
+                <div class="row">
+
+                  <div class="col-md-6 col-lg-3 mb-3">
+                    <label class="ns-service card h-100" for="svcShort">
+                      <img class="ns-service-img" src="images/service-short.jpg" alt="Example of a short haircut"/>
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div>
+                            <div class="ns-service-title">Short Cut</div>
+                            <div class="text-muted small">Clipper / pixie / fade</div>
+                          </div>
+                          <span class="ns-price">$35</span>
+                        </div>
+                        <div class="custom-control custom-radio mt-3">
+                          <input type="radio" id="svcShort" name="service" class="custom-control-input" data-name="Short Cut" data-price="35" data-duration="30">
+                          <label class="custom-control-label" for="svcShort">Select</label>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3 mb-3">
+                    <label class="ns-service card h-100" for="svcMedium">
+                      <img class="ns-service-img" src="images/service-medium.jpg" alt="Example of a medium length haircut"/>
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div>
+                            <div class="ns-service-title">Medium Cut</div>
+                            <div class="text-muted small">Bob / lob / layers</div>
+                          </div>
+                          <span class="ns-price">$45</span>
+                        </div>
+                        <div class="custom-control custom-radio mt-3">
+                          <input type="radio" id="svcMedium" name="service" class="custom-control-input" data-name="Medium Cut" data-price="45" data-duration="45">
+                          <label class="custom-control-label" for="svcMedium">Select</label>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3 mb-3">
+                    <label class="ns-service card h-100" for="svcLong">
+                      <img class="ns-service-img" src="images/service-long.jpg" alt="Example of a long haircut"/>
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div>
+                            <div class="ns-service-title">Long Cut</div>
+                            <div class="text-muted small">Long layers / shaping</div>
+                          </div>
+                          <span class="ns-price">$55</span>
+                        </div>
+                        <div class="custom-control custom-radio mt-3">
+                          <input type="radio" id="svcLong" name="service" class="custom-control-input" data-name="Long Cut" data-price="55" data-duration="60">
+                          <label class="custom-control-label" for="svcLong">Select</label>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3 mb-3">
+                    <label class="ns-service card h-100" for="svcColor">
+                      <img class="ns-service-img" src="images/service-color.jpg" alt="Example of hair coloring service"/>
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-start">
+                          <div>
+                            <div class="ns-service-title">Color Refresh</div>
+                            <div class="text-muted small">Gloss / tone / root</div>
+                          </div>
+                          <span class="ns-price">$85</span>
+                        </div>
+                        <div class="custom-control custom-radio mt-3">
+                          <input type="radio" id="svcColor" name="service" class="custom-control-input" data-name="Color Refresh" data-price="85" data-duration="90">
+                          <label class="custom-control-label" for="svcColor">Select</label>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="d-flex justify-content-end mt-2">
+                  <button id="btnToDate" class="btn btn-primary btn-lg ns-primary" type="button" style="display:none">
+                    Next: Pick a time <i class="bi bi-arrow-right ml-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingDate">
+              <button class="btn btn-link collapsed ns-accordion-link" data-toggle="collapse" data-target="#collapseDate" aria-expanded="false">
+                <span class="ns-step">2</span> Select a date & time
+              </button>
+            </div>
+
+            <div id="collapseDate" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="alert alert-info">
+                  <i class="bi bi-info-circle mr-1"></i>
+                  Tip: Choose a date first — timeslots will appear after.
+                </div>
+
+                <div class="form-row">
+ 
+                  <div class="form-group col-md-6">
+                   <label for="proSelect"><i class="bi bi-person-badge mr-1"></i> Professional</label>
+                    <select class="form-control" id="proSelect" disabled>
+                      <option value="">Select a service first</option>
+                    </select>
+                    <small class="form-text text-muted" id="proHint">Pick who you want for your appointment.</small>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="dateInput"><i class="bi bi-calendar-event mr-1"></i> Date</label>
+                    <input class="form-control" type="date" id="dateInput" disabled/>
+                    <small class="form-text text-muted">We’re open Tue–Sun.</small>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="timeSelect"><i class="bi bi-clock mr-1"></i> Time</label>
+                    <select class="form-control" id="timeSelect" disabled>
+                      <option value="">Select a date first</option>
+                    </select>
+                    <small class="form-text text-muted" id="durationHint">Duration depends on service.</small>
+                  </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                  <button class="btn btn-outline-secondary" type="button" id="btnBackToService">
+                    <i class="bi bi-arrow-left mr-1"></i> Back
+                  </button>
+
+                  <button id="btnToInfo" class="btn btn-primary btn-lg ns-primary" type="button" style="display:none">
+                    Next: Your info <i class="bi bi-arrow-right ml-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingInfo">
+              <button class="btn btn-link collapsed ns-accordion-link" data-toggle="collapse" data-target="#collapseInfo" aria-expanded="false">
+                <span class="ns-step">3</span> Enter your contact info
+              </button>
+            </div>
+
+            <div id="collapseInfo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <p class="text-muted">We’ll only use this to confirm your booking.</p>
+
+                <form id="bookingForm" novalidate>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="fullName"><i class="bi bi-person-fill mr-1"></i> Full name</label>
+                      <input class="form-control" id="fullName" type="text" placeholder="e.g., Jordan Lee" required/>
+                      <div class="invalid-feedback">Please enter your name.</div>
+                    </div>     
+
+                    <div class="form-group col-md-6">
+                      <label for="email"><i class="bi bi-envelope-fill mr-1"></i> Email</label>
+                      <input class="form-control" id="email" type="email" placeholder="you@example.com" required/>
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="phone"><i class="bi bi-telephone-fill mr-1"></i> Phone</label>
+                      <input class="form-control" id="phone" type="tel" placeholder="(555) 555-5555" required/>
+                      <div class="invalid-feedback">Please enter a phone number.</div>
+                      <small class="form-text text-muted" data-toggle="tooltip" title="Tip: include your area code">
+                        We’ll text/call if anything changes.
+                      </small>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label for="notes"><i class="bi bi-chat-left-text-fill mr-1"></i> Notes (optional)</label>
+                      <input class="form-control" id="notes" type="text" placeholder="Allergies, inspiration, etc."/>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="paymentMethod"><i class="bi bi-credit-card-fill mr-1"></i> Payment method</label>
+                      <select class="form-control" id="paymentMethod" required>
+                        <option value="">Choose a payment method</option>
+                        <option value="Credit Card">Credit Card</option>
+                        <option value="Debit">Debit</option>
+                        <option value="Cash">Cash</option>
+                        <option value="Apple Pay">Apple Pay</option>
+                      </select>
+                      <div class="invalid-feedback">Please select a payment method.</div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <label for="referralSource"><i class="bi bi-megaphone-fill mr-1"></i> How did you hear about us?</label>
+                      <select class="form-control" id="referralSource" required>
+                        <option value="">Choose an option</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Google">Google</option>
+                        <option value="Friend / Referral">Friend / Referral</option>
+                        <option value="Walk-in">Walk-in</option>
+                      </select>
+                      <div class="invalid-feedback">Please let us know how you found us.</div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="policyAgree" required>
+                      <label class="custom-control-label" for="policyAgree">I agree to the 24-hour cancellation policy</label>
+                      <div class="invalid-feedback">You must agree before booking.</div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <button class="btn btn-outline-secondary" type="button" id="btnBackToDate">
+                      <i class="bi bi-arrow-left mr-1"></i> Back
+                    </button>
+
+                    <button id="btnSubmit" class="btn btn-success btn-lg ns-primary" type="submit" disabled>
+                      Book now <i class="bi bi-check2 ml-1"></i>
+                    </button>
+                  </div>
+
+                  <div class="text-muted mt-3 small">
+                    By booking, you agree to arrive on time. Need to reschedule? Call us.
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <section id="confirmation" class="ns-confirm card mt-4" style="display:none">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <div class="ns-confirm-icon mr-3"><i class="bi bi-check2-circle"></i></div>
+              <div>
+                <h3 class="mb-1">Booking confirmed!</h3>
+                <div class="text-muted">We’ve saved your appointment. A confirmation message will be sent shortly.</div>
+              </div>
+            </div>
+
+            <hr/>
+
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="mb-2">Appointment details</h5>
+                <div id="confirmDetails" class="text-muted"></div>
+              </div>
+
+              <div class="col-md-6">
+                <h5 class="mb-2">Where to go</h5>
+                <div class="text-muted">
+                  <div><i class="bi bi-geo-alt-fill mr-1"></i> 123 Bank St, Ottawa, ON</div>
+                  <div><i class="bi bi-telephone-fill mr-1"></i> (613) 555-0199</div>
+                  <div><i class="bi bi-clock-fill mr-1"></i> Tue–Sat 10–7 • Sun 11–4</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end mt-3">
+              <button id="btnStartOver" class="btn btn-outline-primary">
+                Start over <i class="bi bi-arrow-counterclockwise ml-1"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+
+      </section>
+
+    </main>
+  </section>
+
+  <!-- newsletter -->
+  <section class="hurr-band hurr-band--cream" aria-label="Newsletter">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h3 class="hurr-h3">Sign up for exclusive offers & openings</h3>
+          <p class="hurr-p mb-0">Be the first to know when we release last-minute appointments and seasonal promos.</p>
+        </div>
+
+
+        <form id="joinForm" class="hurr-newsletter" novalidate>
+          <div class="form-group mb-2">
+            <input id="joinEmail" class="form-control" type="email" placeholder="you@example.com" aria-label="Email address" required />
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+          <button id="joinBtn" class="btn btn-dark hurr-btn mt-3" type="submit">Join</button>
+          <small class="form-text text-muted mt-2">No spam. Unsubscribe anytime.</small>
+          <div id="joinMsg" class="mt-2" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="hurr-footer">
+    <div class="container py-4 d-flex flex-wrap justify-content-between align-items-center">
+      <div class="hurr-footer__brand">Lumière Salon</div>
+      <div class="hurr-footer__meta">Ottawa, ON • (613) 555-0100 • © 2026</div>
+    </div>
+  </footer>
+
+  <script src="scripts/bookings.js"></script>
+</body>
+</html>
