@@ -827,38 +827,91 @@
     </div>
   </footer>
 
-  
-  <!-- chatbot -->
-  <button id="chatbotToggle" class="ns-chatbot-toggle" type="button" aria-expanded="false" aria-controls="chatbotPanel">
-    <i class="bi bi-chat-dots-fill"></i> Chat with us
-  </button>
-
-  <section id="chatbotPanel" class="ns-chatbot" aria-label="Salon chatbot" hidden>
-    <div class="ns-chatbot__header">
-      <div>
-        <div class="ns-chatbot__title">Lumière Assistant</div>
-        <div class="ns-chatbot__sub">Ask about services or book in chat.</div>
-      </div>
-      <button id="chatbotClose" class="ns-chatbot__close" type="button" aria-label="Close chat">&times;</button>
-    </div>
-
-    <div id="chatbotMessages" class="ns-chatbot__messages" aria-live="polite" aria-label="Chat messages"></div>
-
-    <div class="ns-chatbot__quick">
-      <button class="btn btn-sm btn-outline-secondary chatbot-chip" type="button" data-message="What services do you offer?">Services</button>
-      <button class="btn btn-sm btn-outline-secondary chatbot-chip" type="button" data-message="I want to book an appointment">Book</button>
-      <button class="btn btn-sm btn-outline-secondary chatbot-chip" type="button" data-message="What are your hours and location?">Hours & location</button>
-      <button class="btn btn-sm btn-outline-secondary chatbot-chip" type="button" data-message="I need help">Help</button>
-    </div>
-
-    <form id="chatbotForm" class="ns-chatbot__input" novalidate>
-      <input id="chatbotInput" type="text" class="form-control" placeholder="Type your message here..." autocomplete="off" />
-      <button class="btn btn-dark" type="submit">Send</button>
-    </form>
-  </section>
-
   <script src="scripts/bookings.js"></script>
-  <script src="scripts/chatbot.js"></script>
+
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <df-messenger
+  location="us-central1"
+  project-id="lab10seg3125-492503"
+  agent-id="0e881486-eb86-4d94-b0a9-8e38d050547a"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+    chat-title="The Lumière Assistant">
+  </df-messenger-chat-bubble>
+  </df-messenger>
+  <style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+
+    --df-messenger-font-family: "Helvetica Neue", Arial, sans-serif;
+    --df-messenger-font-color: #1f1a17;
+
+    --df-messenger-chat-background: #f7f3ef;
+    --df-messenger-message-user-background: #e7d6d3;
+    --df-messenger-message-bot-background: #fffaf7;
+
+    --df-messenger-send-icon: #4b4744;
+    --df-messenger-button-titlebar-color: #fffaf7;
+    --df-messenger-button-titlebar-font-color: #1f1a17;
+
+    --df-messenger-input-background: #fffaf7;
+    --df-messenger-input-font-color: #1f1a17;
+    --df-messenger-input-placeholder-font-color: #6f6a66;
+
+    --df-messenger-minimized-chat-close-icon-color: #1f1a17;
+    --df-messenger-chip-color: #1f1a17;
+    --df-messenger-chip-background: #f1e4e1;
+    --df-messenger-chip-border-color: #d8c3be;
+
+    --df-messenger-chat-border-radius: 0px;
+    --df-messenger-message-border-radius: 0px;
+  }
+
+  df-messenger-chat-bubble {
+    --df-messenger-chat-bubble-background: #e7d6d3;
+    --df-messenger-chat-bubble-font-color: #1f1a17;
+    --df-messenger-chat-bubble-border-radius: 999px;
+  }
+
+  df-messenger::part(chat-wrapper) {
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+    border: 1px solid #cfc3be;
+  }
+
+  df-messenger::part(titlebar) {
+    border-bottom: 1px solid #d8ccc7;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+  }
+
+  df-messenger::part(input-box) {
+    border-top: 1px solid #e0d6d1;
+  }
+
+  df-messenger::part(input) {
+    border: 1px solid #d8c3be;
+    border-radius: 999px;
+    background: #fffaf7;
+  }
+
+  df-messenger::part(send-button) {
+    color: #4b4744;
+  }
+
+  df-messenger::part(message-bubble) {
+    border: 1px solid #eee3de;
+    line-height: 1.5;
+  }
+
+  df-messenger::part(user-message-bubble) {
+    border: 1px solid #dbc6c1;
+  }
+</style>
 
 </body>
 </html>
